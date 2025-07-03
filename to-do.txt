@@ -1,0 +1,18 @@
+General:
+    - ? Using list and replacing decoration for the checkmarks
+    - Form HTML needed
+    - CSS classes needed
+    - Style mobile view
+    - Style tablet view
+    - Style desktop view
+
+    - ? How should I include the success message?
+        - Seems like it wants me to keep as single page app
+        - ? Can I use it as a "before/after" psuedoclass?
+        - ? Should I just have the original stuff hidden and the success messsage visible after validation?
+
+Tablet:
+    - Design assets has a tablet mode, so will include tablet mode
+
+Desktop:
+    - Flex order is reversed
