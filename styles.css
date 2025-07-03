@@ -1,7 +1,60 @@
-ul {
-  list-style-type: none;
+/* 
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+- Family: [Roboto](https://fonts.google.com/specimen/Roboto)
+*/
+:root {
+  --fc-red: hsl(4, 100%, 67%);
+  --fc-blue-800: hsl(234, 29%, 20%);
+  --fc-blue-700: hsl(235, 18%, 26%);
+  --fc-grey: hsl(0, 0%, 58%);
+  --fc-white: hsl(0, 0%, 100%);
+
+  --fw-400: 400;
+  --fw-700: 700;
 }
 
+/* CSS reset start */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  /* TODO - Temporarily removed for visibility */
+  /* padding: 0; */
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+}
+
+button {
+  border: 0;
+  padding: 0;
+}
+/* CSS reset end */
 li {
   list-style-image: url('./assets/images/icon-list.svg');
 }
