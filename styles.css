@@ -1,3 +1,15 @@
+ul {
+  list-style-type: none;
+}
+
+li {
+  list-style-image: url('./assets/images/icon-list.svg');
+}
+
+.hidden {
+  display: none;
+}
+
 /* Default footer */
 .attribution {
   font-size: 11px;

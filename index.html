@@ -17,35 +17,46 @@
     </title>
   </head>
   <body>
-    <main>
-      <img src="" alt="Signup illustration" />
+    <main class="wrapper">
+      <img
+        class="signup-img"
+        src="./assets/images/illustration-sign-up-mobile.svg"
+        alt="Signup illustration"
+      />
+      <h1>Stay updated!</h1>
+      <p>Join 60,000+ product managers receiving monthly updates on:</p>
+
+      <ul>
+        <li>Product discovery and building what matters</li>
+        <li>Measuring to ensure updates are a success</li>
+        <li>And much more!</li>
+      </ul>
+      <!-- Sign-up form start -->
+      <form id="form">
+        <label for="email">Email address</label>
+        <input
+          name="email"
+          id="email"
+          type="email"
+          placeholder="email@company.com"
+        />
+        <button class="form__button">Subscribe to monthly newsletter</button>
+      </form>
+      <!-- Sign-up form end -->
+
+      <!-- Success message start -->
+      <div class="hidden">
+        Thanks for subscribing! A confirmation email has been sent to
+        ash@loremcompany.com. Please open it and click the button inside to
+        confirm your subscription. Dismiss message
+      </div>
+      <!-- Success message end -->
     </main>
-    <h1>Stay updated!</h1>
-    <p>Join 60,000+ product managers receiving monthly updates on:</p>
-
-    <ul>
-      <li>Product discovery and building what matters</li>
-      <li>Measuring to ensure updates are a success</li>
-      <li>And much more!</li>
-    </ul>
-    Email address email@company.com Subscribe to monthly newsletter
-    <!-- Sign-up form start -->
-
-    <!-- Sign-up form end -->
-
-    <!-- Success message start -->
-
-    Thanks for subscribing! A confirmation email has been sent to
-    ash@loremcompany.com. Please open it and click the button inside to confirm
-    your subscription. Dismiss message
-
-    <!-- Success message end -->
-
-    <div class="attribution">
+    <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+      >. Coded by <a href="#">code269</a>.
+    </footer>
   </body>
 </html>
