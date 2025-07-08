@@ -102,11 +102,10 @@ li::before {
 }
 
 .form__button {
-  border: 1px solid var(--fc-grey);
   background-color: var(--fc-blue-800);
   font-weight: var(--fw-700);
   color: var(--fc-white);
-  transition: 250ms;
+  transition: background-color 250ms;
 }
 
 .form__button:hover {

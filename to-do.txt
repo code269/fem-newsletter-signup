@@ -16,5 +16,4 @@ Desktop:
     - Flex order is reversed
 
 Current:
-    - CSS classes needed
-    - Style mobile view
+    - Style mobile success page
