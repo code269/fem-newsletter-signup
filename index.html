@@ -11,6 +11,12 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles.css" />
     <title>
       Frontend Mentor | Newsletter sign-up form with success message
@@ -23,34 +29,39 @@
         src="./assets/images/illustration-sign-up-mobile.svg"
         alt="Signup illustration"
       />
-      <h1>Stay updated!</h1>
-      <p>Join 60,000+ product managers receiving monthly updates on:</p>
+      <section class="content">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
 
-      <ul>
-        <li>Product discovery and building what matters</li>
-        <li>Measuring to ensure updates are a success</li>
-        <li>And much more!</li>
-      </ul>
-      <!-- Sign-up form start -->
-      <form id="form">
-        <label for="email">Email address</label>
-        <input
-          name="email"
-          id="email"
-          type="email"
-          placeholder="email@company.com"
-        />
-        <button class="form__button">Subscribe to monthly newsletter</button>
-      </form>
-      <!-- Sign-up form end -->
+        <ul>
+          <li>Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are a success</li>
+          <li>And much more!</li>
+        </ul>
+        <!-- Sign-up form start -->
+        <form id="form">
+          <label class="block form__label" for="email">Email address</label>
+          <input
+            class="block form__input"
+            name="email"
+            id="email"
+            type="email"
+            placeholder="email@company.com"
+          />
+          <button class="form__button block">
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+        <!-- Sign-up form end -->
 
-      <!-- Success message start -->
-      <div class="hidden">
-        Thanks for subscribing! A confirmation email has been sent to
-        ash@loremcompany.com. Please open it and click the button inside to
-        confirm your subscription. Dismiss message
-      </div>
-      <!-- Success message end -->
+        <!-- Success message start -->
+        <div class="success-message hidden">
+          Thanks for subscribing! A confirmation email has been sent to
+          ash@loremcompany.com. Please open it and click the button inside to
+          confirm your subscription. Dismiss message
+        </div>
+        <!-- Success message end -->
+      </section>
     </main>
     <footer class="attribution">
       Challenge by
