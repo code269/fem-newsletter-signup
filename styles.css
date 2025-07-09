@@ -46,7 +46,7 @@ button {
 /* CSS reset end */
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 h1 {
@@ -66,12 +66,12 @@ li {
 
 li {
   margin-bottom: 1em;
-  list-style-image: url('./assets/images/icon-list.svg');
+  list-style-image: url("./assets/images/icon-list.svg");
 }
 
 li::before {
   margin-left: 0.7em;
-  content: '';
+  content: "";
 }
 
 .signup-img {
@@ -123,6 +123,7 @@ li::before {
 
 /* Default footer */
 .attribution {
+  margin-block: 1.5em;
   font-size: 11px;
   text-align: center;
 }
