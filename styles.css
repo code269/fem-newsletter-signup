@@ -47,6 +47,11 @@ button {
 
 body {
   font-family: 'Roboto', sans-serif;
+  /* min-height: 100vh; */
+}
+
+main {
+  min-height: 100vh;
 }
 
 h1 {
@@ -113,6 +118,29 @@ li::before {
   background-color: var(--fc-red);
 }
 
+.success-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.success-message__img {
+  max-width: 4em;
+}
+
+.success__wrapper {
+  margin-block: auto;
+}
+
+.success__wrapper h1 {
+  font-size: 2.7rem;
+}
+
+.success__wrapper p {
+  font-size: 1.25rem;
+}
+
 .block {
   display: block;
 }
@@ -122,11 +150,11 @@ li::before {
 }
 
 /* Default footer */
-.attribution {
-  font-size: 11px;
+/* .attribution {
+  font-size: 12px;
   text-align: center;
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
-}
+} */

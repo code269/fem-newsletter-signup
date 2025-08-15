@@ -5,7 +5,7 @@ General:
     - ? How should I include the success message?
         - Seems like it wants me to keep as single page app
         - ? Can I use it as a "before/after" psuedoclass?
-        - ? Should I just have the original stuff hidden and the success messsage visible after validation?
+        - ? => Should I just have the original stuff hidden and the success messsage visible after validation?
 
     - Do I need the 'block' class? Is it better to just select and add?
 
