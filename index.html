@@ -24,46 +24,53 @@
   </head>
   <body>
     <main class="wrapper">
-      <img
-        class="signup-img hidden"
+      <!-- <img
+        class="signup-img"
         src="./assets/images/illustration-sign-up-mobile.svg"
         alt="Signup illustration"
-      />
+      /> -->
       <!-- TODO -- Currently hidden -->
-      <section id="default-section" class="content hidden">
-        <h1>Stay updated!</h1>
-        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+      <section id="default-section">
+        <img
+          class="signup-img"
+          src="./assets/images/illustration-sign-up-mobile.svg"
+          alt="Signup illustration"
+        />
+        <div class="content">
+          <h1>Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
 
-        <ul>
-          <li>Product discovery and building what matters</li>
-          <li>Measuring to ensure updates are a success</li>
-          <li>And much more!</li>
-        </ul>
-        <!-- Sign-up form start -->
-        <form id="form">
-          <label class="block form__label" for="email">Email address</label>
-          <input
-            class="block form__input"
-            name="email"
-            id="email"
-            type="email"
-            placeholder="email@company.com"
-          />
-          <button id="subscribe-button" class="form__button block">
-            Subscribe to monthly newsletter
-          </button>
-        </form>
+          <ul>
+            <li>Product discovery and building what matters</li>
+            <li>Measuring to ensure updates are a success</li>
+            <li>And much more!</li>
+          </ul>
+          <!-- Sign-up form start -->
+          <form id="form">
+            <label class="block form__label" for="email">Email address</label>
+            <input
+              class="block form__input"
+              name="email"
+              id="email"
+              type="email"
+              placeholder="email@company.com"
+            />
+            <button id="subscribe-btn" class="form__btn block">
+              Subscribe to monthly newsletter
+            </button>
+          </form>
+        </div>
       </section>
       <!-- Sign-up form end -->
 
       <!-- Success message start -->
       <!-- TODO -- Current visible -->
-      <section id="success-msg" class="success-message content">
+      <section id="success" class="success-msg content hidden">
         <div class="success__wrapper">
           <img
             src="./assets/images/icon-success.svg"
             alt="Success icon"
-            class="success-message__img"
+            class="success-msg__img"
           />
           <h1>Thanks for subscribing!</h1>
           <p>
@@ -72,7 +79,7 @@
             button inside to confirm your subscription.
           </p>
         </div>
-        <button id="dismiss-button" class="form__button block">
+        <button id="dismiss-btn" class="form__btn block">
           Dismiss message
         </button>
       </section>
@@ -85,5 +92,7 @@
         >. Coded by <a href="#">code269</a>.
       </footer> -->
     </main>
+
+    <script src="./index.js"></script>
   </body>
 </html>

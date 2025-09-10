@@ -16,4 +16,8 @@ Desktop:
     - Flex order is reversed
 
 Current:
-    - Style mobile success page
+    - Javascript & form logic
+        - Apply error message in console of failed input and do not show success page
+
+    - Styling errors:
+        - Page not reaching max height

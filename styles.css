@@ -94,7 +94,7 @@ li::before {
 }
 
 .form__input,
-.form__button {
+.form__btn {
   padding: 1.5em;
   margin-block-end: 1.7em;
   inline-size: 100%;
@@ -106,26 +106,26 @@ li::before {
   border: 1px solid var(--fc-grey);
 }
 
-.form__button {
+.form__btn {
   background-color: var(--fc-blue-800);
   font-weight: var(--fw-700);
   color: var(--fc-white);
   transition: background-color 250ms;
 }
 
-.form__button:hover {
+.form__btn:hover {
   cursor: pointer;
   background-color: var(--fc-red);
 }
 
-.success-message {
+.success-msg {
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
 }
 
-.success-message__img {
+.success-msg__img {
   max-width: 4em;
 }
 
