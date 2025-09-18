@@ -2,6 +2,7 @@ const defaultSection = document.getElementById('default-section');
 const success = document.getElementById('success');
 // const subscribeBtn = document.getElementById('subscribe-btn');
 const dismissBtn = document.getElementById('dismiss-btn');
+const confirmationEmail = document.getElementById('confirmation-email');
 
 function toggleHidden() {
   defaultSection.classList.toggle('hidden');
@@ -29,6 +30,7 @@ form.addEventListener('submit', (e) => {
 
   if (validation) {
     console.log('Submitted');
+    confirmationEmail.textContent = email;
     toggleHidden();
   } else {
     console.log('Error!');
