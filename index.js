@@ -9,33 +9,32 @@ function toggleHidden() {
   success.classList.toggle('hidden');
 }
 
-// function validateEmail(e) {
+// function handleValidation(e) {
 
 // }
 
-// Fn: Form submitted
 const form = document.getElementById('form');
 const emailInput = document.getElementById('email');
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const errorMsg = document.getElementById('error-msg');
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-
-  // Get input
   const email = emailInput.value;
-  console.log(email);
 
   // Check if input matches Regex:
   const validation = emailRegex.test(email);
 
   if (validation) {
-    console.log('Submitted');
-    confirmationEmail.textContent = email;
+    errorMsg.classList.add('hidden');
+    emailInput.classList.remove('form__input--error');
+
     toggleHidden();
+    confirmationEmail.textContent = email;
   } else {
-    console.log('Error!');
+    errorMsg.classList.remove('hidden');
+    emailInput.classList.add('form__input--error');
   }
-  // If success, log submitted and run toggleHidden
 });
 
 // Revert success page

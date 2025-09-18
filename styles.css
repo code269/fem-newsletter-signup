@@ -52,6 +52,7 @@ body {
 
 main {
   min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1 {
@@ -87,10 +88,20 @@ li::before {
   padding-inline: 2em;
 }
 
-.form__label {
+.label__container {
+  display: flex;
+}
+
+.form__label,
+.error-msg {
   margin-bottom: 0.8em;
   font-size: 0.9rem;
   font-weight: var(--fw-700);
+}
+
+.error-msg {
+  color: var(--fc-red);
+  margin-inline-start: auto;
 }
 
 .form__input,
@@ -104,6 +115,15 @@ li::before {
 
 .form__input {
   border: 1px solid var(--fc-grey);
+}
+
+.form__input--error {
+  border-color: var(--fc-red);
+  background-color: hsl(4, 100%, 95%);
+}
+
+.form__input--error::placeholder {
+  color: var(--fc-red);
 }
 
 .form__btn {
