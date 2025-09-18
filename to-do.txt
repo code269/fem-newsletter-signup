@@ -2,13 +2,6 @@ General:
     - Style tablet view
     - Style desktop view
 
-    - ? How should I include the success message?
-        - Seems like it wants me to keep as single page app
-        - ? Can I use it as a "before/after" psuedoclass?
-        - ? => Should I just have the original stuff hidden and the success messsage visible after validation?
-
-    - Do I need the 'block' class? Is it better to just select and add?
-
 Tablet:
     - Design assets has a tablet mode, so will include tablet mode
 
@@ -16,8 +9,8 @@ Desktop:
     - Flex order is reversed
 
 Current:
-    - Javascript & form logic
-        - Apply error message in console of failed input and do not show success page
-
     - Styling errors:
         - Page not reaching max height
+
+Other:
+    - Look into git alias
