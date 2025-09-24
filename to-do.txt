@@ -8,9 +8,5 @@ Tablet:
 Desktop:
     - Flex order is reversed
 
-Current:
-    - Styling errors:
-        - Page not reaching max height
-
 Other:
     - Look into git alias
