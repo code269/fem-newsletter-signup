@@ -52,7 +52,43 @@ body {
 
 main {
   min-height: 100vh;
-  font-family: 'Roboto', sans-serif; /* ToDo: Fix: Redundant */
+  font-family: 'Roboto', sans-serif; /* ToDo: Remove- Redundant */
+
+  @media (min-width: 1024px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--fc-blue-700);
+  }
+}
+
+.default-section {
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: var(--fc-white);
+    border-radius: 1em;
+  }
+}
+
+.illustration-svg {
+  padding-block-start: 75.73%;
+  inline-size: 100%;
+  background-image: url('./assets/images/illustration-sign-up-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-width: 768px) {
+    padding-block-start: 68.18%;
+    background-image: url('./assets/images/illustration-sign-up-tablet.svg');
+  }
+
+  @media (min-width: 1024px) {
+    background-image: url('./assets/images/illustration-sign-up-desktop.svg');
+  }
 }
 
 h1 {
@@ -78,10 +114,6 @@ li {
 li::before {
   margin-left: 0.7em;
   content: '';
-}
-
-.signup-img {
-  inline-size: 100%;
 }
 
 .content {
