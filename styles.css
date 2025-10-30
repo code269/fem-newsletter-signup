@@ -54,7 +54,7 @@ main {
   min-height: 100vh;
   font-family: 'Roboto', sans-serif; /* ToDo: Remove- Redundant */
 
-  @media (min-width: 1024px) {
+  @media (width > 1024px) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,12 +63,13 @@ main {
 }
 
 .default-section {
-  @media (min-width: 1024px) {
+  @media (width > 1024px) {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
     padding: 1em;
+    inline-size: 900px;
     background-color: var(--fc-white);
     border-radius: 1em;
   }
@@ -81,13 +82,15 @@ main {
   background-repeat: no-repeat;
   background-size: contain;
 
-  @media (min-width: 768px) {
+  @media (width > 768px) {
+    /* margin: 2em; */
     padding-block-start: 68.18%;
     background-image: url('./assets/images/illustration-sign-up-tablet.svg');
   }
 
-  @media (min-width: 1024px) {
+  @media (width > 1024px) {
     background-image: url('./assets/images/illustration-sign-up-desktop.svg');
+    inline-size: 50%;
   }
 }
 
@@ -175,6 +178,22 @@ li::before {
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
+
+  @media (width > 768px) and (width < 1024px) {
+    margin: 0 auto;
+
+    border: 2px dotted red;
+  }
+
+  @media (width >= 1024px) {
+    padding: 2em 3.5em;
+    gap: 2em;
+    inline-size: 25%;
+    min-block-size: 0;
+    inline-size: 500px;
+    background-color: var(--fc-white);
+    border-radius: 2em;
+  }
 }
 
 .success-msg__img {
