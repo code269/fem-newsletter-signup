@@ -102,24 +102,24 @@ h1 {
   font-size: 2.4rem;
 }
 
-ul {
-  padding-inline: 1.7em;
-  margin-block: 1.5em;
-}
-
 p,
 li {
   line-height: 1.5;
 }
 
-li {
-  margin-bottom: 1em;
-  list-style-image: url('./assets/images/icon-list.svg');
+li::before {
+  content: url('./assets/images/icon-list.svg');
 }
 
-li::before {
-  margin-left: 0.7em;
-  content: '';
+.checkmarks {
+  display: grid;
+  gap: 1rem;
+  margin-block: 1.5em;
+}
+
+.checkmarks li {
+  display: grid;
+  grid-template-columns: 2.5rem auto;
 }
 
 .content {
