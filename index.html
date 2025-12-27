@@ -31,7 +31,21 @@
           alt="Signup illustration"
         /> -->
         <!-- TODO: Swap original image classes into this div -->
-        <div class="illustration-svg"></div>
+        <picture class="illustration">
+          <source
+            media="(min-width: 1024px)"
+            srcset="./assets/images/illustration-sign-up-desktop.svg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="./assets/images/illustration-sign-up-tablet.svg"
+          />
+          <img
+            src="./assets/images/illustration-sign-up-mobile.svg"
+            alt="Sign up illustration"
+            class="illustration__img"
+          />
+        </picture>
         <div class="content">
           <h1>Stay updated!</h1>
           <p>Join 60,000+ product managers receiving monthly updates on:</p>

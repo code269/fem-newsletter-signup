@@ -54,7 +54,7 @@ main {
   min-height: 100vh;
   font-family: 'Roboto', sans-serif; /* ToDo: Remove- Redundant */
 
-  @media (width > 1024px) {
+  @media (min-width: 1024px) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,11 +63,13 @@ main {
 }
 
 .default-section {
-  @media (width > 1024px) {
+  @media (min-width: 1024px) {
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between;
+
+    gap: 1em;
     padding: 1em;
     inline-size: 900px;
     background-color: var(--fc-white);
@@ -75,22 +77,23 @@ main {
   }
 }
 
-.illustration-svg {
-  padding-block-start: 75.73%;
+.illustration {
   inline-size: 100%;
-  background-image: url('./assets/images/illustration-sign-up-mobile.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
 
-  @media (width > 768px) {
-    /* margin: 2em; */
-    padding-block-start: 68.18%;
-    background-image: url('./assets/images/illustration-sign-up-tablet.svg');
+  @media (min-width: 1024px) {
+    inline-size: 52%;
+    height: 100%;
   }
+}
 
-  @media (width > 1024px) {
-    background-image: url('./assets/images/illustration-sign-up-desktop.svg');
-    inline-size: 50%;
+.illustration__img {
+  width: 100%;
+  height: auto;
+  display: block;
+
+  @media (min-width: 1024px) {
+    height: 100%;
+    object-fit: cover;
   }
 }
 
@@ -179,13 +182,13 @@ li::before {
   justify-content: center;
   min-height: 100vh;
 
-  @media (width > 768px) and (width < 1024px) {
+  @media (min-width: 768px) and (max-width: 1023px) {
     margin: 0 auto;
 
     border: 2px dotted red;
   }
 
-  @media (width >= 1024px) {
+  @media (min-width: 1024px) {
     padding: 2em 3.5em;
     gap: 2em;
     inline-size: 25%;
