@@ -81,7 +81,7 @@ main {
   inline-size: 100%;
 
   @media (min-width: 1024px) {
-    inline-size: 52%;
+    inline-size: 50%;
     height: 100%;
   }
 }
