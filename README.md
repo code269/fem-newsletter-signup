@@ -26,15 +26,21 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+Mobile
+![Mobile Screenshot](./assets/screenshots/mobile-screenshot.png)
+
+Tablet
+![Tablet Screenshot](./assets/screenshots/tablet-screenshot.png)
+
+Desktop
+![Desktop Screenshot](./assets/screenshots/desktop-screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/code269/fem-newsletter-signup)
+- Live Site URL: [GitHub Pages](https://code269.github.io/fem-newsletter-signup/)
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [GitHub: code269](https://github.com/code269)
+- Frontend Mentor - [@code269](https://www.frontendmentor.io/profile/code269)
