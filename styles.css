@@ -47,12 +47,15 @@ button {
 
 body {
   font-family: 'Roboto', sans-serif;
-  /* min-height: 100vh; */
 }
 
 main {
   min-height: 100vh;
-  font-family: 'Roboto', sans-serif; /* ToDo: Remove- Redundant */
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    display: grid;
+    align-items: center;
+  }
 
   @media (min-width: 1024px) {
     display: flex;
@@ -88,7 +91,6 @@ main {
 
 .illustration__img {
   width: 100%;
-  height: auto;
   display: block;
 
   @media (min-width: 1024px) {
@@ -184,8 +186,6 @@ li::before {
 
   @media (min-width: 768px) and (max-width: 1023px) {
     margin: 0 auto;
-
-    border: 2px dotted red;
   }
 
   @media (min-width: 1024px) {
@@ -222,13 +222,3 @@ li::before {
 .hidden {
   display: none;
 }
-
-/* Default footer */
-/* .attribution {
-  font-size: 12px;
-  text-align: center;
-}
-
-.attribution a {
-  color: hsl(228, 45%, 44%);
-} */
