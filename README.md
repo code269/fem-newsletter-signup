@@ -26,13 +26,16 @@ Users should be able to:
 
 ### Screenshot
 
-Mobile
+## **Mobile**:
+
 ![Mobile Screenshot](./assets/screenshots/mobile-screenshot.png)
 
-Tablet
+## **Tablet**:
+
 ![Tablet Screenshot](./assets/screenshots/tablet-screenshot.png)
 
-Desktop
+## **Desktop**:
+
 ![Desktop Screenshot](./assets/screenshots/desktop-screenshot.png)
 
 ### Links
